@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<title>Futevolêi</title>
+</head>
+<body>
+	<div class="slideMove">
+		<button class="btn" id="BtnAnt" onclick="mudPage(this, ['#BtnProx','#pagInfo','#slide'], [1, 0], 10)"><</button>
+		<label class="pag" id="pagInfo">1/10</label>
+		<button class="btn" id="BtnProx" onclick="mudPage(this, ['#BtnAnt','#pagInfo','#slide'], [0, 0], 10)">></button>
+	</div>
+	<div class="slides">
+		<div class="slide" id="slide0">
+			<div class="boll0"></div>
+			<h6 class="title0">Fute<b class="V0">V</b>ôlei</h6>
+			<label class="subtext0">By: Vitor e Murilo</label>
+		</div>
+		<div class="slide" id="slide1">
+			<h6 class="title1">SUMÁRIO:</h6>
+			<div class="block1">
+				<div class="boll1"></div>
+				<ol type="I" class="list1">
+					<li>Origem;</li>
+					<li>Esporte;</li>
+					<li>Nomes;</li>
+					<li>Impacto.</li>
+				</ol>
+			</div>
+		</div>
+		<div class="slide" id="slide2">
+			<h6 class="title1">ORIGEM:</h6>
+			<div class="cards2">
+				<div class="card2" style="background-image: url('imgs/rio.png');">
+					<h2>Nasceu no Rio em 1960;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/voleivsfut.jpg');">
+					<h2>Fute + Volêi;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/Moraes.jpg');">
+					<h2>Octavio Moraes;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/trofeu.png');">
+					<h2>Competição;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/campo.png');">
+					<h2>Popularização;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/capitalismo.png');">
+					<h2>Comercialização.</h2>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="slide3">
+			<h6 class="title1">ESPORTE</h6>
+			<img src="imgs/campo.jpg" class="img3">
+			<div class="rules">
+				<ol type="I" class="list3">
+					<li><i class="fa-solid fa-volleyball"></i>O Vôlei do Futevôlei;</li>
+					<li><i class="fa-solid fa-futbol"></i>O Futebol do Futevôlei;</li>
+					<li><i class="fa-solid fa-umbrella-beach"></i>Praia;</li>
+				</ol>
+				<ol type="I" class="list3">
+					<li><i class="fa-solid fa-circle-xmark"></i>2x2 ou 4x4;</li>
+					<li><i class="fa-solid fa-dumbbell"></i>Músculos;</li>
+					<li><i class="fa-solid fa-brain"></i>Mente.</li>
+				</ol>
+			</div>
+		</div>
+		<div class="slide" id="slide4">
+			<h6 class="title1">GRANDES NOMES:</h6>
+			<div class="cards2">
+				<div class="card2" style="background-image: url('imgs/brasil.jpg');">
+					<h2>Brasil;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/portugal.jpg');">
+					<h2>Portugual;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/espanha.jpg');">
+					<h2>Espanha;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/italia.jpg');">
+					<h2>Itália.</h2>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="slide5">
+			<h6 class="title1">GRANDES NOMES:</h6>
+			<div class="cards2">
+				<div class="card2" style="background-image: url('imgs/liga1.jpg');">
+					<h2>Campeonato Mundial de Futevôlei;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/liga2.jpg');">
+					<h2>Liga Brasileira de Futevôlei;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/liga3.jpg');">
+					<h2>European Footvolley League;</h2>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="slide6">
+			<h6 class="title1">GRANDES NOMES:</h6>
+			<div class="cards2">
+				<div class="card2" style="background-image: url('imgs/jogador1.PNG');">
+					<h2>Juninho BR;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/jogador3.PNG');">
+					<h2>Jordan Santos PT;</h2>
+				</div>
+				<div class="card2" style="background-image: url('imgs/jogador2.PNG');">
+					<h2>Bê Martins BR.</h2>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="slide7">
+			<h6 class="title1">IMPACTO:</h6>
+			<img src="imgs/campo.png" class="img3">
+			<div class="rules">
+				<ol type="I" class="list3">
+					<li><i class="fa-solid fa-user"></i>Social;</li>
+					<li><i class="fa-solid fa-dollar-sign"></i>Econômico;</li>
+					<li><i class="fa-solid fa-heart-pulse"></i>Bem-Estar.</li>
+				</ol>
+			</div>
+		</div>
+		<div class="slide" id="slide8">
+			<h6 class="title0">Inclusão</h6>
+		</div>
+		<div class="slide" id="slide9">
+			<div class="boll0"></div>
+			<h6 class="title0">F<b class="V9" style="color: var(--corE);">i</b>m</h6>
+			<label class="subtext0" style="color: var(--corE);">By: Vitor e Murilo</label>
+		</div>
+	</div>
+</body>
+<script>
+	document.querySelector('body').addEventListener('keydown', (event)=>{
+	    var KeyCode = event.keyCode || event.which;
+	    if(KeyCode==39){
+	        let btn = document.querySelector('#BtnProx');
+	        btn.click();
+	    }else if(KeyCode==37){
+	    	let btn = document.querySelector('#BtnAnt');
+	        btn.click();
+	    }
+	});
+</script>
+</html>
